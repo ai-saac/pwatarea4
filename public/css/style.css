@@ -1,0 +1,262 @@
+
+/* Estilos personalizados */
+#mobile-menu {
+  position: fixed;
+  top: 65px;
+  bottom: 0;
+  width: 100%;
+  z-index: 100;
+  padding: 2rem;
+  background-color: #1a202c;
+  transition: transform 0.3s ease-in-out;
+}
+
+#mobile-menu.hidden {
+  transform: translateX(-100%);
+}
+
+/* Estilo para el cuerpo del documento */
+body {
+  margin: 0;
+  /* Elimina el margen por defecto */
+  height: 100vh;
+}
+
+/* Estilo para las etiquetas h1 */
+h1 {
+  text-align: center;
+  /* Alinea el texto del h1 al centro */
+}
+
+/* Estilo para las etiquetas input */
+input, select, option{
+  border: 1px solid #383fb3;
+  /* Agrega un borde sólido de 1px de ancho y color var(--color-secundary) a los inputs */
+}
+
+/* Estilo para las etiquetas input cuando están en foco */
+input:focus {
+  border: none;
+  /* Elimina el borde */
+  outline: none;
+  /* Elimina el outline (borde externo) */
+  border-bottom: 2px solid #383fb3;
+  /* Agrega un borde inferior de 2px de ancho y color var(--color-secundary) a los inputs cuando están en foco */
+}
+
+/* Estilo para el contenedor de inicio de sesión */
+.login-container {
+  display: flex;
+  /* Muestra el contenedor como un elemento flex */
+  flex-wrap: wrap;
+  /* Permite que los elementos dentro del contenedor se ajusten al ancho del mismo */
+}
+
+/* Estilo para la sección de banner de inicio de sesión */
+.login-banner {
+  width: 100%;
+  /* Ocupa todo el ancho del contenedor */
+  background-image: url(../img/background.jpg);
+  /* Establece la imagen de fondo */
+  color: #ffffff;
+  /* Establece el color de la fuente */
+  font-family: "Roboto", sans-serif;
+  /* Establece la fuente */
+  transition: all 0.5s ease-in-out;
+  /* Establece una transición suave para todos los cambios de estilo */
+  height: 100vh;
+  /* Ocupa toda la altura de la pantalla */
+  background-size: cover;
+  /* Ajusta la imagen de fondo al tamaño del contenedor */
+  background-repeat: no-repeat;
+}
+
+/* Estilo para el contenedor de registro */
+.form-container {
+  display: flex;
+  /* Muestra el contenedor como un elemento flex */
+  justify-content: center;
+  /* Alinea los elementos dentro del contenedor al centro */
+}
+
+/* Estilo para el formulario de inicio de sesión */
+.login-form {
+  background-color: #ffffffb3;
+  /* Establece un color de fondo semi-transparente */
+  color: #333333;
+  /* Establece el color de la fuente */
+  font-family: "Roboto", sans-serif;
+  /* Establece la fuente */
+  transition: all 0.5s ease-in-out;
+  /* Establece una transición suave para todos los cambios de estilo */
+  position: fixed; 
+  /* Fija la posición del formulario en la pantalla */
+  right: 0; 
+  /* Posiciona el formulario a la derecha del contenedor */
+  padding: 25px; 
+  /* Agrega padding de 25px al formulario */
+  width: calc(35%); 
+  /* Ocupa el 35% del ancho del contenedor */
+  height: 100vh; 
+  /* Ocupa toda la altura de la pantalla */
+}
+
+/* Estilo para las etiquetas label */
+label {
+  font-weight: 600; 
+  /* Establece una fuente de 600 de peso (negrita) para las etiquetas label */
+}
+
+/* Estilo para el formulario de inicio de sesión */
+.form-login {
+  display: flex;
+  /* Muestra el formulario como un elemento flex */
+  flex-direction: column;
+  /* Coloca los elementos del formulario uno debajo del otro */
+  background: #fff;
+  /* Establece un color de fondo blanco para el formulario */
+  padding: 25px;
+  /* Agrega padding de 25px al formulario */
+  border-radius: 10px;
+  /* Agrega un borde redondeado de 10px de radio a los elementos del formulario */
+  flex-wrap: wrap;
+  /* Permite que los elementos del formulario se ajusten al ancho del mismo */
+  margin: 10px 25px;
+  /* Agrega margen de 10px arriba y abajo y margen de 25px a izquierda y derecha */
+}
+
+/* Estilo para los elementos input del formulario de inicio de sesión */
+.form-login input {
+  margin: 15px 0;
+  /* Agrega margen de 15px arriba y abajo a los elementos input */
+  padding: 10px;
+  /* Agrega padding de 10px a los elementos input */
+}
+
+/* Estilo para los botones del formulario de inicio de sesión */
+.form-login button {
+  padding: 10px;
+  /* Agrega padding de 10px a los botones */
+  margin: 10px 0;
+  /* Agrega margen de 10px arriba y abajo a los botones */
+  background: #383fb3;
+  /* Establece un color de fondo azul oscuro para los botones */
+  color: #fff;
+  /* Establece un color blanco para el texto de los botones */
+  border: none;
+  /* Elimina el borde de los botones */
+  border-radius: 5px;
+  /* Agrega un borde redondeado de 5px de radio a los botones */
+  font-size: 1em;
+  /* Establece un tamaño de fuente de 1em para los botones */
+  font-weight: 600;
+  /* Establece una fuente de 600 de peso (negrita) para los botones */
+  cursor: pointer;
+  /* Muestra el cursor como una mano al pasar el mouse sobre los botones */
+}
+
+/* Estilo para el formulario de registro */
+.form-registro {
+  display: flex;
+  /* Muestra el formulario como un elemento flex */
+  flex-direction: column;
+  /* Coloca los elementos del formulario uno debajo del otro */
+  background: #fff;
+  /* Establece un color de fondo blanco para el formulario */
+  padding: 25px;
+  /* Agrega padding de 25px al formulario */
+  border-radius: 10px;
+  /* Agrega un borde redondeado de 10px de radio a los elementos del formulario */
+  flex-wrap: wrap;
+  /* Permite que los elementos del formulario se ajusten al ancho del mismo */
+  margin: 0 25px;
+  /* Agrega margen de 0px arriba y abajo y margen de 25px a izquierda y derecha */
+}
+
+/* Estilo para los elementos input del formulario de registro */
+.form-registro input, select, option {
+    padding: 10px;
+  /* Agrega padding de 10px a los elementos input */
+}
+
+/* Estilo para los botones del formulario de registro */
+.form-registro button {
+  padding: 10px;
+  /* Agrega padding de 10px a los botones */
+  margin: 10px 0;
+  /* Agrega margen de 10px arriba y abajo a los botones */
+  background: #383fb3;
+  /* Establece un color de fondo azul oscuro para los botones */
+  color: #fff;
+  /* Establece un color blanco para el texto de los botones */
+  border: none;
+  /* Elimina el borde de los botones */
+  border-radius: 5px;
+  /* Agrega un borde redondeado de 5*/
+}
+
+/* Estilo para los botones */
+.redir {
+  padding: 10px;
+  /* Agrega padding de 10px a los botones */
+  margin: 25px;
+  /* Agrega margen de 25px a todos los lados de los botones */
+  background: #c9d8f9;
+  /* Establece un color de fondo azul claro para los botones */
+  border: none;
+  /* Elimina el borde de los botones */
+  border-radius: 5px;
+  /* Agrega un borde redondeado de 5px de radio a los botones */
+  font-size: 1em;
+  /* Establece un tamaño de fuente de 1em para los botones */
+  font-weight: 600;
+  /* Establece una fuente de 600 de peso (negrita) para los botones */
+  cursor: pointer;
+}
+
+/* Estilo para los enlaces dentro de los botones */
+button a {
+  color: #fff;
+  /* Establece un color negro para los enlaces */
+  text-decoration: none;
+  /* Elimina la decoración (subrayado) de los enlaces */
+}
+
+.registro, .login {
+  width: 100%;
+}
+
+/* Estilo para pantallas de hasta 1050px de ancho */
+@media (max-width: 1050px) {
+  .login-form {
+    width: calc(40%);
+    /* Ocupa el 40% del ancho del contenedor */
+    padding: 10px;
+    /* Agrega padding de 10px al formulario */
+  }
+}
+
+/* Estilo para pantallas de hasta 900px de ancho */
+@media (max-width: 900px) {
+  .login-form {
+    width: calc(45%);
+    /* Ocupa el 45% del ancho del contenedor */
+    padding: 10px;
+    /* Agrega padding de 10px al formulario */
+  }
+}
+
+/* Estilo para pantallas de hasta 768px de ancho */
+@media (max-width: 768px) {
+  .login-banner {
+    width: 100%;
+    /* Ocupa todo el ancho del contenedor */
+  }
+
+  .login-form {
+    width: 100%;
+    /* Ocupa todo el ancho del contenedor */
+    padding: 10px;
+    /* Agrega padding de 10px al formulario */
+  }
+}

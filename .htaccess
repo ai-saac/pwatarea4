@@ -1,0 +1,10 @@
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+  
+  # Redirige todas las solicitudes a /tasks_admin.php
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule ^tasks_admin\.php$ admin/modules/tasks/views/tasks_admin.php [L]
+  RewriteRule ^tasks\.php$ admin/modules/tasks/views/tasks.php [L]
+</IfModule>
